@@ -1,0 +1,200 @@
+products:
+    - categoryname: 'Apparel'
+      name: 'QOR – The T-Shirt'
+      namewithslug: 'qor-the-t-shirt'
+      code: 'qor-tee-basic'
+      price: 25.0
+      description: 'QOR t-shirt, basic but versatile: you can lie on it on the brilliant marble-sanded beaches of Santraginus V, inhaling the heady sea vapours; you can sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon; use it to sail a miniraft down the slow heavy River Moth; wet it for use in hand-to-hand-combat; wrap it round your head to ward off noxious fumes or avoid the gaze of the Ravenous Bugblatter Beast of Traal.'
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'White'
+            colorcode: 'w'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/01-tee-c.20160316044516567824937.png'
+      sizevariations:
+          - sizename: 'S'
+          - sizename: 'M'
+          - sizename: 'L'
+          - sizename: 'XL'
+          - sizename: 'XXL'
+    - categoryname: 'Apparel'
+      name: 'QOR Jacket'
+      namewithslug: 'qor-jacket'
+      code: 'qor-jack'
+      price: 45.0
+      description: "It's a jacket. What do you expect? It's grey. It's cool. It's got the QOR logo on it. Now go an buy it."
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+          - name: 'Feature Products'
+      colorvariations:
+          - colorname: 'Charcoal Grey'
+            colorcode: 'gr-ch'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/02-jacket-a.20160316042916412393755.png'
+      sizevariations:
+          - sizename: 'S'
+          - sizename: 'M'
+          - sizename: 'L'
+          - sizename: 'XL'
+          - sizename: 'XXL'
+    - categoryname: 'Apparel'
+      name: 'QOR Hoodie Dark'
+      namewithslug: 'qor-hoodie-dark'
+      code: 'qor-hoodiny'
+      price: 48.95
+      description: 'Feel the power of the dark side of the QOR with this hoodie.'
+      madecountry: 'USA'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'Navy Blue'
+            colorcode: 'nvy-bl'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/03-hoodie-a.20160316050016575943551.png'
+      sizevariations:
+          - sizename: 'S'
+          - sizename: 'M'
+          - sizename: 'L'
+          - sizename: 'XL'
+          - sizename: 'XXL'
+    - categoryname: 'Accessories'
+      name: 'QOR timepiece'
+      namewithslug: 'qor-timepiece'
+      code: 'qor-watch-clunky'
+      price: 24.95
+      description: 'For all the people who work on flex time, now you can always know what your QOR time is.'
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'Black'
+            colorcode: 'b'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/04-watch-a.20160316055316228073566.png'
+      sizevariations:
+          - sizename: 'M'
+          - sizename: 'L'
+    - categoryname: 'Accessories'
+      name: 'Wristwatch Slim'
+      namewithslug: 'wristwatch-slim'
+      code: 'qor-wristwatch-slim'
+      price: 32.45
+      description: "If you want to know the exact time, you'll need another watch face, or a steady hand and a felt marker to write the numbers on. This is a watch for showing, not for looking at."
+      madecountry: 'China'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'Black'
+            colorcode: 'b'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/05-watch-a.20160316050616453080832.png'
+      sizevariations:
+          - sizename: 'M'
+    - categoryname: 'Accessories'
+      name: 'Blu Q'
+      namewithslug: 'blu-q'
+      code: 'blue-qor-watch'
+      price: 134.12
+      description: "Blue QOR watch for perfect camouflage when swimming. Unfortunately this watch isn't water resistant, though."
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'Light Blue'
+            colorcode: 'blue-light'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/06-watch-b.20160316051716100503633.png'
+      sizevariations:
+          - sizename: 'M'
+    - categoryname: 'Accessories'
+      name: 'Geektie'
+      namewithslug: 'geektie'
+      code: 'geektie-plant-qor'
+      price: 22.9
+      description: 'Nail your colours to the mast and let your inner geek out with this necktie showing logos for QOR and The Plant (the fine people who brought you this little marvel).'
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'White'
+            colorcode: 'w'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/07-necktie-b.20160316054316215346502.png'
+      sizevariations:
+          - sizename: 'S'
+    - categoryname: 'Apparel'
+      name: 'Plant Plimsoll'
+      namewithslug: 'plant-plimsoll'
+      code: 'pla-pli-shoe'
+      price: 98.0
+      description: 'Try to say that quickly 10 times in a row.'
+      madecountry: 'Japan'
+      collections:
+          - name: 'Sale Products'
+      colorvariations:
+          - colorname: 'White'
+            colorcode: 'w'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/08-shoes-d.20160316053316367027290.png'
+      sizevariations:
+          - sizename: '7 UK'
+          - sizename: '8 UK'
+          - sizename: '9 UK'
+          - sizename: '10 UK'
+          - sizename: '11 UK'
+    - categoryname: 'Stationery'
+      name: 'The Plantbook'
+      namewithslug: 'the-plantbook'
+      code: 'plantbook-01'
+      price: 31.2
+      description: 'The definitive notebook for geeks. Incredibly responsive tactile interface with handwriting recognition and battery life of several years! You can use any stylus with this device. Instant access with patented bookthumbing™ browsing technology. Can be used in landscape and portrait mode, works with any language.'
+      madecountry: 'Japan'
+      collections:
+          - name: 'Feature Products'
+      colorvariations:
+          - colorname: 'Black'
+            colorcode: 'b'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/9-book-c.20160316055616619095831.png'
+      sizevariations:
+          - sizename: 'S'
+    - categoryname: 'Accessories'
+      name: 'Phone Qase'
+      namewithslug: 'phone-qase'
+      code: 'pho-q'
+      price: 42.5
+      description: "Very sturdy phone case with QOR logo. Ideal for programmers who work remotely from an uninhabited island in the Pacific and who might drop their phones down cliffs, gorges an other hazardous places."
+      madecountry: 'China'
+      collections:
+          - name: 'Feature Products'
+      colorvariations:
+          - colorname: 'Charcoal Grey'
+            colorcode: 'gr-ch'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/10-iphone-case-a.20160316050116186604394.png'
+      sizevariations:
+          - sizename: 'S'
+          - sizename: 'M'
+          - sizename: 'L'
+    - categoryname: 'Accessories'
+      name: 'Mouse Pad'
+      namewithslug: 'mouse-pad'
+      code: 'mapa-01'
+      price: 12.95
+      description: 'This exquisite mouse pad is made from free range Qorsican mice.'
+      madecountry: 'USA'
+      collections:
+          - name: 'Sale Products'
+          - name: 'Feature Products'
+      colorvariations:
+          - colorname: 'White'
+            colorcode: 'w'
+            images:
+                - url: 'http://qor3.s3.amazonaws.com/11-mousepad-a.20160316061516297102890.png'
+      sizevariations:
+          - sizename: 'S'
+          - sizename: 'M'
+          - sizename: 'L'

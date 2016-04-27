@@ -1,0 +1,143 @@
+{{with .Result }}
+  <div class="container">
+    {{with .ColorVariation }}
+      <div class="products__details">
+        <div class="row">
+          <div class="column column-8 products__gallery">
+
+            <div class="swiper-container products__gallery--top">
+              <ul class="slides">
+                {{range $image := .Images}}
+                  <li style="background-image:url({{$image.Image}})"></li>
+                {{end}}
+              </ul>
+            </div>
+
+            <div class="swiper-container products__gallery--thumbs">
+              <ul class="slides">
+                {{range $image := .Images}}
+                  <li style="background-image:url({{$image.Image}})"></li>
+                {{end}}
+              </ul>
+            </div>
+          </div>
+
+          <div class="column column-4 products__meta">
+            <h1>{{.Product.Name}}</h1>
+            <p class="products__meta--price">${{.Product.Price}}</p>
+            <ul>
+              <li>
+                <strong>COLOR:</strong>
+                <span>{{.Color.Name}}</span>
+                <div class="products__meta--color">
+                  <span class="selected" style="background: #F6841C"></span>
+                  <span style="background: #25A5DF"></span>
+                  <span style="background: #80DA7A"></span>
+                  <span style="background: #FFD322"></span>
+                  <span style="background: #77969E"></span>
+                  <span style="background: #2F2F2F"></span>
+                </div>
+              </li>
+
+              <li>
+                <strong>SIZE:</strong>
+                <select class="" name="domains">
+                  {{range .SizeVariations}}
+                    <option value="{{.Size.ID}}">{{.Size.Name}}</option>
+                  {{end}}
+                </select>
+                <a href="#">Size Guide</a>
+              </li>
+
+              <li>
+                <strong>QTY:</strong>
+                <div class="products__meta--qty">
+                  <a href="#" class="reduce">-</a>
+                  <a href="#" class="add">+</a>
+                  <input type="text" class="qty" />
+                </div>
+              </li>
+              <li>
+                <button type="submit" class="button button__primary">+ ADD TO CART</button>
+              </li>
+            </ul>
+            <div class="products__details--share">
+              <a href="#"><img src="/images/icon-fav.png" height="24px" /> <span>TO WISHLIST</span></a>
+              <div>
+                <span>SHARE:</span>
+                <a href="#"><img src="/images/facebook-grey.png" height="24px" /></a>
+                <a href="#"><img src="/images/twitter-grey.png" height="24px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row products__info">
+
+          <div class="column column-4">
+            <h6>DESCRIPTION:</h6>
+            <p>{{.Product.Description}}</p>
+          </div>
+
+          <div class="column column-4">
+            <h6>SPECS:</h6>
+            <div>
+              <label>Made in:</label>
+              <p>{{.Product.MadeCountry}}</p>
+            </div>
+            <div>
+              <label>Materials:</label>
+              <p>Rubber soles, fabric uppers, plastic & metal zipper</p>
+            </div>
+          </div>
+
+          <div class="column column-4">
+            <div>
+              <label>Framistan:</label>
+              <p>Me non paenitet nullum festiviorem excogitasse ad hoc. Etiam habebis sem dicantur magna mollis euismod.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{end}}
+
+
+
+    <!-- featured product widget -->
+    <div class="row products__featured">
+      <h3>RECOMMENDATIONS</h3>
+      <p>Products you might also like based on other products you viewed</p>
+      <div class="products__featured--slider" id="featured-product">
+        <ul class="products__list slides">
+          {{range $product := related_products .ColorVariation}}
+            <li>
+              <a href="{{.DefaultPath}}" class="products__list--img"><img src="{{.MainImageUrl}}" /></a>
+              <a class="products__list--title" href="{{.DefaultPath}}">{{.Name}}</a>
+              <p class="products__list--price" href="{{.DefaultPath}}"><span class="item_price">${{.Price}}</span></p>
+            </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+    <!-- end: featured product widget -->
+
+    <!-- featured product widget -->
+    <div class="row products__featured">
+      <h3>WHAT OTHER PEOPLE BOUGHT</h3>
+      <p>People who bought this products, also bought the following products</p>
+      <div class="products__featured--slider" id="also-bought">
+        <ul class="products__list slides">
+          {{range $product := other_also_bought .ColorVariation}}
+            <li>
+              <a href="{{.DefaultPath}}" class="products__list--img"><img src="{{.MainImageUrl}}" /></a>
+              <a class="products__list--title" href="{{.DefaultPath}}">{{.Name}}</a>
+              <p class="products__list--price" href="{{.DefaultPath}}"><span class="item_price">${{.Price}}</span></p>
+            </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+
+    <!-- end: featured product widget -->
+  </div>
+{{end}}
